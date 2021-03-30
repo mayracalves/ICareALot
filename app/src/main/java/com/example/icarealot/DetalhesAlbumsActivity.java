@@ -6,14 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.icarealot.model.Post;
+import com.example.icarealot.model.Albums;
 
-public class DetalhePostActivity extends AppCompatActivity {
+public class DetalhesAlbumsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalhe_post);
+        setContentView(R.layout.activity_detalhes_albums);
         Intent intent = getIntent();
 //        Parcelable prc = intent.getParcelableExtra("objTodo");
 //        if (prc instanceof Todo) {
@@ -22,17 +22,15 @@ public class DetalhePostActivity extends AppCompatActivity {
 //        if (prc instanceof Pessoa) {
 //
 //        }
-        Post post = intent.getParcelableExtra("objPost");
+        Albums albums = intent.getParcelableExtra("objPost");
 //        bind(post);
 
         TextView tv = findViewById(R.id.tvId);
-        tv.setText(post.getId()+"");
+        tv.setText(albums.getId()+"");
         tv = findViewById(R.id.tvIdAlbum);
-        tv.setText(post.getUserId()+"");
+        tv.setText(albums.getUserId()+"");
         tv = findViewById(R.id.tvTitle);
-        tv.setText(post.getTitle());
-        tv = findViewById(R.id.tvUrl);
-        tv.setText(post.getBody());
+        tv.setText(albums.getTitle());
 
     }
 //    public void trocaLayout(View v) {

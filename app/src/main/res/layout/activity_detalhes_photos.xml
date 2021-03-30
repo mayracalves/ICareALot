@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
-tools:context=".DetalhePostActivity">
+tools:context=".DetalhesPhotosActivity">
 
 <TextView
     android:id="@+id/tvId"
@@ -19,21 +19,31 @@ tools:context=".DetalhePostActivity">
     android:layout_height="wrap_content"
     android:text="TextView" />
 
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#F57F17"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textSize="30sp"
-        android:textStyle="bold|italic" />
+<TextView
+    android:id="@+id/tvTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F57F17"
+    android:text="TextView"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+    android:textSize="30sp"
+    android:textStyle="bold|italic" />
+
+<TextView
+    android:id="@+id/tvUrl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0D47A1"
+    android:text="TextView"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+    android:textSize="30sp"
+    android:textStyle="bold|italic" />
 
     <TextView
-        android:id="@+id/tvUrl"
+        android:id="@+id/tvThumbnailUrl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#0D47A1"
+        android:background="#880E4F"
         android:text="TextView"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textSize="30sp"

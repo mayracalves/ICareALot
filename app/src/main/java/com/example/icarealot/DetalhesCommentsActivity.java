@@ -6,14 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.icarealot.model.Post;
+import com.example.icarealot.model.Comments;
 
-public class DetalhePostActivity extends AppCompatActivity {
+public class DetalhesCommentsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detalhe_post);
+        setContentView(R.layout.activity_detalhes_comments);
         Intent intent = getIntent();
 //        Parcelable prc = intent.getParcelableExtra("objTodo");
 //        if (prc instanceof Todo) {
@@ -22,17 +22,19 @@ public class DetalhePostActivity extends AppCompatActivity {
 //        if (prc instanceof Pessoa) {
 //
 //        }
-        Post post = intent.getParcelableExtra("objPost");
+        Comments comments = intent.getParcelableExtra("objPost");
 //        bind(post);
 
         TextView tv = findViewById(R.id.tvId);
-        tv.setText(post.getId()+"");
+        tv.setText(comments.getId()+"");
         tv = findViewById(R.id.tvIdAlbum);
-        tv.setText(post.getUserId()+"");
+        tv.setText(comments.getPostId()+"");
         tv = findViewById(R.id.tvTitle);
-        tv.setText(post.getTitle());
+        tv.setText(comments.getName());
+        tv = findViewById(R.id.tvEmail);
+        tv.setText(comments.getEmail());
         tv = findViewById(R.id.tvUrl);
-        tv.setText(post.getBody());
+        tv.setText(comments.getBody());
 
     }
 //    public void trocaLayout(View v) {

@@ -30,7 +30,7 @@ public class Login extends AppCompatActivity {
     public void login(){
         String user=username.getText().toString().trim();
         String pass=password.getText().toString().trim();
-        if(user.equals("mayra")&& pass.equals("mayra")){
+        if(user.equals("mayra") && pass.equals("mayra")){
             Toast.makeText(this,"Conectado! :D",Toast.LENGTH_LONG).show();
             IrPrincipal();
         }else {
