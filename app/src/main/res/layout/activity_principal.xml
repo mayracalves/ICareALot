@@ -10,38 +10,55 @@
         android:id="@+id/textView3"
         android:layout_width="308dp"
         android:layout_height="155dp"
-        android:layout_marginBottom="178dp"
         android:text="Bem vinda a I Care A Lot!"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="#C55050"
-        app:layout_constraintBottom_toTopOf="@+id/btnVoltarLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/btnVoltarLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="135dp"
-        android:layout_marginEnd="135dp"
-        android:layout_marginBottom="19dp"
-        android:text="Voltar Login"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="52dp"
         android:background="#f00"
+        android:text="Voltar Login"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/btnVoltarSplash"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/btnVoltarSplash" />
 
     <Button
         android:id="@+id/btnVoltarSplash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginEnd="129dp"
-        android:layout_marginBottom="118dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="52dp"
         android:text="Voltar Splash"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnVoltarLogin"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollViewItens"
+        android:layout_width="371dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="26dp"
+        android:background="#8DFD3737"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:id="@+id/layoutVerticalItens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
